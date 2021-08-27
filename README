@@ -1,0 +1,27 @@
+Project description:
+
+The Springer Nature journals group would like to be able to automatically classify article manuscripts into academic fields of research as the manuscripts are submitted to our electronic submission system. The submission volumes are so high that the only way to achieve this in a consistent manner is by training a machine learning model. 
+
+Your task is to apply your skills in data science and machine learning to this business problem, to report on your methods and results, and to make a recommendation to the journals group about the next steps. 
+You are to produce a report in the form of a presentation of slides. In your slide deck, you will need to present findings and decisions made during the process, as well as communicating the final result, as well as the ultimate recommendations. 
+
+Please share your presentation along with the supporting code within the time frame communicated to you.
+
+You have 4 CSV files with data to support you. These files contain various pieces of information that seem relevant to the task at hand, including field of research classifications (from a different platform). The data are documents published in the Open Access journal “Nature Communications” in 2018 and 2019. The majority of the documents are research articles. However, there are a number of other document types in the data that should be removed, since they are likely to introduce some noise: addenda, editorials, corrections (author, publisher), replies, and retractions.
+
+The files are named as follows: file_1.csv, file_2.csv, file_3.csv, file_4.csv. The column names of the CSV files are:
+
+File:
+1. Title, doi, n_references
+2. Doi, for_name, for_code
+3. Doi, n_authors, 
+4. Doi, corresponding_author_h_index
+
+Code book:
+DOI: a Digital Object Identifier is a permanent unique identifier consisting of numbers and letters, used to identify a document and link to it on the web.
+Corresponding_author_h_index: the H-index of the corresponding author of the article (measure of impact)
+For_code: a numeric identifier for the field of research (FoR) associated with the article
+For_name: the name of the field of research associated with the article
+N_authors: the number of authors per article
+N_references: the number of articles cited in the article
+Title: the title of the article
